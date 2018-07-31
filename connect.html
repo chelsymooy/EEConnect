@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html data-n-head="">
+  <head>
+    <meta data-n-head="true" charset="utf-8"><meta data-n-head="true" content="width=device-width,initial-scale=1" name="viewport"><meta data-n-head="true" content="EE4G" name="description" data-hid="description">
+    <title data-n-head="true">EE4G - by Thunderlab</title>
+    <link rel="alternate" href="android-app://io.cordova.myapp21bc3e/https/gantirugi.com/deeplink/app" />
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  </head>
+  <body class="text-center">
+  	<div>
+	  	<img src="http://drive.thunder.id/file/public/15/22/2018/07/30/11/ee4g.png" class="img img-responsive mt-5" style="max-width: 200px;">
+  	</div>
+  	<div>
+	  	<img src="http://drive.thunder.id/file/public/15/22/2018/07/30/11/SPINNEREE.gif" class="img img-responsive" style="max-width: 300px;">
+  	</div>
+  	<div class="btn-group fixed-bottom" id="btn-openapp" role="group" style="display: none; margin-bottom: 20px;">
+		<a href="#" id="link-btn-openapp" data-href="https://gantirugi.com/deeplink/app" class="btn btn-danger btn-lg ml-auto px-5">Buka Aplikasi</a>
+		<a href="#" id="close-btn-openapp" class="btn btn-danger btn-lg mdi mdi-close mdi-white mr-auto px-3 border-left border-white border-top-0 border-bottom-0 border-right-0"></a>
+	</div>
+	<!-- <a href="#" id="close-btn-openapp" class="btn btn-secondary btn-lg mdi mdi-close mdi-white mr-auto px-3 border-left border-white border-top-0 border-bottom-0 border-right-0"></a> -->
+
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+ 
+	<script type="text/javascript">
+	if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		$(document).ready(function(){
+			var linkOpenApp = $('#link-btn-openapp');
+
+			$('#btn-openapp').fadeIn();
+			linkOpenApp.attr('href', linkOpenApp.attr('data-href'));
+		});
+	}
+	</script>
+  </body>
+</html>
